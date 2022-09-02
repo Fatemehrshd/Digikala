@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Fatemeh Rashidi">
+    <meta name="keywords" content="digikala, online shop, bootstrap">
+    <meta name="description" content="design digikala web page using bootstrap">
+    <meta name="viewport" content="width=device-width, scale=1">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.rtl.css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo2.png">
+    <title>فروشگاه اینترنتی دیجی کالا</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="hesder-img">
+            <img class="img-fluid" class="w-100" src="images/header.jpg" style="object-fit: cover;">
+        </div>
+
+        <!-- navbar: -->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/digikala.png" alt="" height="24" class="d-inline-block align-text-top">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 border-0" type="search" placeholder="جستجو" aria-label="Search"
+                            id="search-box">
+                        <button class="btn btn-outline-secondary" type="submit">
+                            <img src="images/search.png" class="logo">
+                        </button>
+                    </form>
+                </div>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    style="color: black;">
+                    ورود | ثبت نام
+                </button>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    style="margin-right: 3px;">
+                    <img src="images/shopping-cart.png" id="bascket">
+
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!-- carefories: -->
+        <div class="d-flex flex-row mb-3" id="categories">
+            <div class="p-2"><button class="items" id="classification">
+                    <img src="images/menu.png" id="menu-icon">
+                    دسته بندی کالاها</button></div>
+
+            <div class="vr" style="height: 30px; margin-top: 8px;"></div>
+
+            <div class="p-2"><button class="items">
+                    <img src="images/supermarket.png" class="logo">
+                    سوپرمارکت</button></div>
+            <div class="p-2"><button class="items">
+                    <img src="images/fire.png" class="logo">
+                    پرفروش ترینها</button></div>
+            <div class="p-2"><button class="items">
+                    <img src="images/discount.png" class="logo">
+                    تخفیف ها و پیشنهادات</button></div>
+            <div class="p-2"><button class="items">
+                    <img src="images/percantage.png" class="logo">
+                    شگفت انگیزها</button></div>
+
+            <div class="vr" style="height: 30px; margin-top: 8px;"></div>
+
+            <div class="p-2"><button class="items">
+                    سوالی دارید؟</button></div>
+            <div class="p-2"><button class="items">فروشنده شوید!</button></div>
+            <div class="p-2"><button class="items ms-1" id="city">
+                    <img src="images/location.png" class="logo">
+                    لطفا شهر خود را انتخاب کنید.</button></div>
+        </div>
+
+
+        <!-- slider: -->
+        <div class="row">
+            <div class="col-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                            aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                            aria-label="Slide 8"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+                            aria-label="Slide 9"></button>
+
+
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="img-fluid" src="images/1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="images/2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="images/3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="images/4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="images/5.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="images/6.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="images/7.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="images/8.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="images/9.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- buttons: -->
+        <!-- <div class="container"> -->
+
+
+            <div class="row mt-4">
+                <div class="table-responsive">
+                    <table class="table table-borderless" style="background-color: transparent;">
+                        <tbody>
+                          <tr>
+                            <td>
+                                <a href="#">
+                                    <img src="images/jet.png" alt="" class="buttons img-fluid">
+                                <figcaption class="figure-caption">
+                                    دیجی کالا جت
+                                </figcaption>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <img src="images/lottery.png" alt="" class="buttons img-fluid">
+                                    <figcaption class="figure-caption">
+                                        خرید اقساطی
+                                    </figcaption>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <img src="images/installment.png" alt="" class="buttons img-fluid">
+                                <figcaption class="figure-caption">
+                                    قرعه کشی آیفون 13
+                                </figcaption>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <img src="images/mehr.png" alt="" class="buttons img-fluid">
+                                <figcaption class="figure-caption">
+                                    دیجی کالا مهر
+                                </figcaption>
+                                </a>
+                            </td>
+                            <td>
+                               <a href="#">
+                                <img src="images/school.png" alt="" class="buttons img-fluid">
+                                <figcaption class="figure-caption">
+                                    بازگشت به مدرسه
+                                </figcaption>
+                               </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <img src="images/surprise.png" alt="" class="buttons img-fluid">
+                                    <figcaption class="figure-caption">
+                                        سورپرایز
+                                    </figcaption>
+                                   </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <img src="images/plus.png" alt="" class="buttons img-fluid">
+                                    <figcaption class="figure-caption">
+                                        دیجی پلاس
+                                    </figcaption>
+                                   </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <img src="images/more.png" alt="" class="buttons img-fluid">
+                                    <figcaption class="figure-caption">
+                                       بیشتر
+                                    </figcaption>
+                                   </a>
+                            </td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                </div>
+               
+            </div>
+    
+
+
+            <!-- <div class="row" id="button-con">
+
+                <div class="col-lg col-md-3 col-sm-6 d-flex justify-content-center">
+                    <a href="#">
+                        <img src="images/jet.png" alt="" class="buttons img-fluid">
+                    <figcaption class="figure-caption">
+                        کالای دیجیتال
+                    </figcaption>
+                    </a>
+                    <figure class="figure">
+                        <img class="buttons" src="images/jet.png">
+                        <figcaption class="figure-caption" style="text-align: center;">
+                            دیجی کالا جت
+                            <span style="font-size: 14px;">دیجی کالا جت</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg col-md-3 col-sm-6 d-flex justify-content-center">
+                    <figure class="figure">
+                        <img class="buttons" src="images/lottery.png">
+                        <figcaption class="figure-caption" style="text-align: center;">
+                            <span style="font-size: 14px;">قرعه کشی آیفون 13</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg col-md-3 col-sm-6 d-flex justify-content-center">
+                    <figure class="figure">
+                        <img class="buttons" src="images/installment.png">
+                        <figcaption class="figure-caption" style="text-align: center;">
+                            <span style="font-size: 14px;">خرید اقساطی</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg col-md-3 col-sm-6 d-flex justify-content-center">
+                    <figure class="figure">
+                        <img class="buttons" src="images/mehr.png">
+                        <figcaption class="figure-caption" style="text-align: center;">
+                            <span style="font-size: 14px;">دیجی کالا مهر</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg col-md-3 col-sm-6 d-flex justify-content-center">
+                    <figure class="figure">
+                        <img class="buttons" src="images/school.png">
+                        <figcaption class="figure-caption" style="text-align: center;">
+                            <span style="font-size: 14px;">بازگشت به مدرسه</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg col-md-3 col-sm-6 d-flex justify-content-center">
+                    <figure class="figure">
+                        <img class="buttons" src="images/surprise.png">
+                        <figcaption class="figure-caption" style="text-align: center;">
+                            <span style="font-size: 14px;">سورپرایز</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg col-md-3 col-sm-6 d-flex justify-content-center">
+                    <figure class="figure">
+                        <img class="buttons" src="images/plus.png">
+                        <figcaption class="figure-caption" style="text-align: center;">
+                            <span style="font-size: 14px;">دیجی پلاس</span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg col-md-3 col-sm-6 d-flex justify-content-center">
+                    <figure class="figure">
+                        <img class="buttons" src="images/more.png">
+                        <figcaption class="figure-caption" style="text-align: center;">
+                            <span style="font-size: 14px;">بیشتر</span>
+                        </figcaption>
+                    </figure>
+                </div>
+
+            </div> -->
+        <!-- </div> -->
+
+        <div class="row bg-danger py-4 mt-4" style="border-radius: 20px;">
+            <div class="col">
+                <div class="container">
+                    <div class="row">
+                        <div class="col d-md-block d-sm-none d-lg-block mb-3" style="text-align: center;">
+                            <a href="#">
+                                <figure class="figure">
+                                    <img src="images/suggestion.svg" class="img-fluid">
+                                    <br>
+                                    <img src="images/box.png" class="img-fluid">
+                                    <figcaption>
+                                        <button type="button" class="btn btn-outline-light">مشاهده همه</button>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+
+                        <div class="col-lg col-md-4 col-sm-12 mb-3">
+                            <a href="#">
+                                <div class="card">
+                                    <img src="images/11.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body left-txt">
+                                        <h6 class="card-title">90,000 تومان</h6>
+                                        <div class="percentage bg-danger">23%</div>
+                                        <p class="before">116,230</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg col-md-4 col-sm-12 mb-3">
+                            <a href="#">
+                                <div class="card">
+                                    <img src="images/22.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body left-txt">
+                                        <h6 class="card-title">8,899,000 تومان</h6>
+                                        <div class="percentage bg-danger">29%</div>
+                                        <p class="before">12,500,000</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg col-md-4 col-sm-12 mb-3">
+                            <a href="#">
+                                <div class="card">
+                                    <img src="images/33.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body left-txt">
+                                        <h6 class="card-title">173,000 تومان</h6>
+                                        <div class="percentage bg-danger">36%</div>
+                                        <p class="before">270,000</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg col-md-4 col-sm-12 mb-3">
+                            <a href="#">
+                                <div class="card">
+                                    <img src="images/44.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body left-txt">
+                                        <h6 class="card-title">9,949,000 تومان</h6>
+                                        <div class="percentage bg-danger">7%</div>
+                                        <p class="before">10,651,000</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg col-md-4 col-sm-12 mb-3">
+                            <a href="#">
+                                <div class="card">
+                                    <img src="images/55.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body left-txt">
+                                        <h6 class="card-title">149,000 تومان</h6>
+                                        <div class="percentage bg-danger">33%</div>
+                                        <p class="before">224,000</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div class="row">
+            <table class="table table-bordered">
+                <tr>
+                    <td>
+                        <div class="col">
+                            <img src="images/fresh.png">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col" style="vertical-align: middle;">
+                            <img src="images/fresh.svg">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="col">
+                            <div id="thirty">تا 30%</div>
+                        </div>
+                    </td>
+                    
+                    
+                    <div class="col">
+                </tr>
+                
+                
+            </table>
+        </div> -->
+
+        <div class="row bg-light py-4 mt-3">
+            <div class="row justify-content-center">
+                <div class="col-1 put-center">
+                    <img src="images/fresh.png">
+                </div>
+                <div class="col-3 put-center">
+                    <img src="images/fresh.svg">
+                </div>
+                <div class="col-2 put-center">
+                    <div id="thirty">تا 40% تخفیف</div>
+                </div>
+
+                <div class="col d-flex flex-row mb-3 put-center">
+                    <div class="p-2">
+                        <img src="images/111.jpg" class="circle little">
+                    </div>
+                    <div class="p-2">
+                        <img src="images/222.jpg" class="circle little">
+
+                    </div>
+                    <div class="p-2">
+                        <img src="images/333.jpg" class="circle little">
+                    </div>
+                    <div class="p-2">
+                        <img src="images/444.jpg" class="circle little">
+                    </div>
+                    <div class="p-2">
+                        <img src="images/555.jpg" class="circle little">
+                    </div>
+                </div>
+                <div class="col-2 put-center" id="ninty">
+                    <a href="#" id="ninty">بیش از 90 کالا</a>
+                </div>
+            </div>
+
+            <!-- <div class="col-7" style="display: flex; justify-content: space-around;">
+                    <div class="col">
+                        <img src="images/111.jpg"  class="circle little">
+                    </div>
+                    <div class="col">
+                        <img src="images/222.jpg"  class="circle little">
+                    </div>
+                    <div class="col">
+                        <img src="images/333.jpg"  class="circle little">
+                    </div>
+                    <div class="col">
+                        <img src="images/444.jpg"  class="circle little">
+                    </div>
+                    <div class="col">
+                        <img src="images/555.jpg"  class="circle little">
+                    </div>
+                </div> -->
+           
+        </div>
+
+
+
+        <div class="row contain-4">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <a href="#">
+                    <img src="images/1-4.jpg" class="four img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <a href="#">
+                    <img src="images/2-4.jpg" class="four img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <a href="#">
+                    <img src="images/3-4.jpg" class="four img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <a href="#">
+                    <img src="images/4-4.jpg" class="four img-fluid" alt="">
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="row" style="margin: 10px;">
+            <div class="table-responsive">
+                <table class="table table-borderless" style="background-color: white;">
+                    <thead>
+                      <tr style="text-align: center;">
+                        <th scope="col">دسته بندی های دیجی کالا</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                            <a href="#">
+                                <img src="images/digital.png" alt="" class="mid img-fluid">
+                            <figcaption class="figure-caption">
+                                کالای دیجیتال
+                            </figcaption>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#">
+                                <img src="images/machine.png" alt="" class="mid img-fluid">
+                                <figcaption class="figure-caption">
+                                    خودرو، ابزار و تجهیزات صنعتی
+                                </figcaption>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#">
+                                <img src="images/mode.png" alt="" class="mid img-fluid">
+                            <figcaption class="figure-caption">
+                                مد و پوشاک
+                            </figcaption>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#">
+                                <img src="images/milk.png" alt="" class="mid img-fluid">
+                            <figcaption class="figure-caption">
+                                کالاهای سوپرمارکتی
+                            </figcaption>
+                            </a>
+                        </td>
+                        <td>
+                           <a href="#">
+                            <img src="images/toys.png" alt="" class="mid img-fluid">
+                            <figcaption class="figure-caption">
+                                اسباب بازی، کودک و نوزاد
+                            </figcaption>
+                           </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <a href="#">
+                                <img src="images/local.png" alt="" class="mid img-fluid">
+                                <figcaption class="figure-caption">
+                                    محصولات بومی و محلی
+                                </figcaption>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#">
+                                <img src="images/beauty.png" alt="" class="mid img-fluid">
+                            <figcaption class="figure-caption">
+                                زیبایی و سلامت
+                            </figcaption>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#">
+                                <img src="images/home.png" alt="" class="mid img-fluid">
+                            <figcaption class="figure-caption">
+                                خانه و آشپزخانه
+                            </figcaption>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#">
+                                <img src="images/writing.png" alt="" class="mid img-fluid">
+                            <figcaption class="figure-caption">
+                                کتاب، لوازم تحریر و هنر
+                            </figcaption>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#">
+                                <img src="images/sport.png" alt="" class="mid img-fluid">
+                                <figcaption class="figure-caption">
+                                    ورزش و سفر
+                                </figcaption>
+                            </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+           
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- footer: -->
+        <div class="row">
+            <table class="table table-bordered">
+                <tr>
+                    <td>
+                        <a href="#"><img src="images/fidibo.svg"></a>
+                    </td>
+                    <td>
+                        <a href="#"><img src="images/jet.svg"></a>
+                    </td>
+                    <td>
+                        <a href="#"><img src="images/magnet.svg"></a>
+                    </td>
+                    <td>
+                        <a href="#"><img src="images/digiMehr.svg"></a>
+                    </td>
+                    <td>
+                        <a href="#"><img src="images/digikala-business.svg"></a>
+                    </td>
+                    <td>
+                        <a href="#"><img src="images/digimag.svg"></a>
+                    </td>
+                    <td>
+                        <a href="#"><img src="images/digipay.svg"></a>
+                    </td>
+                    <td>
+                        <a href="#"><img src="images/digistyle.svg"></a>
+                    </td>
+                </tr>
+                <!-- <div class="col">
+                <a href="#"><img src="images/fidibo.svg"></a>
+            </div>
+            <div class="col">
+                <a href="#"><img src="images/jet.svg"></a>
+            </div>
+            <div class="col">
+                <a href="#"><img src="images/magnet.svg"></a>
+            </div>
+            <div class="col">
+                <a href="#"><img src="images/digiMehr.svg"></a>
+            </div>
+            <div class="col">
+                <a href="#"><img src="images/digikala-business.svg"></a>
+            </div>
+            <div class="col">
+                <a href="#"><img src="images/digimag.svg"></a>
+            </div>
+            <div class="col">
+                <a href="#"><img src="images/digipay.svg"></a>
+            </div>
+            <div class="col">
+                <a href="#"><img src="images/digistyle.svg"></a>
+            </div> -->
+                <tr>
+                    <td>
+                        <a href="#"><img src="images/digiaffiliate.svg"></a>
+                    </td>
+                    <td>
+                        <a href="#"><img src="images/digiclub.svg"></a>
+                    </td>
+                    <td>
+                        <a href="#"><img src="images/digiexpress.svg"></a>
+                    </td>
+                    <td>
+                        <a href="#"><img src="images/digiplus.svg"></a>
+                    </td>
+                    <td>
+                        <a href="#"><img src="images/komoda.svg"></a>
+                    </td>
+                    <td>
+                        <a href="#"><img src="images/pindo.svg"></a>
+                    </td>
+                    <td>
+                        <a href="#"><img src="images/diginext.svg"></a>
+                    </td>
+                    <td>
+                        <a href="#"><img src="images/ganjeh.svg"></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- <div class="row">
+            <div class="col">
+                <a href="#"><img src="images/digiaffiliate.svg"></a>
+            </div>
+            <div class="col">
+                <a href="#"><img src="images/digiclub.svg"></a>
+            </div>
+            <div class="col">
+                <a href="#"><img src="images/digiexpress.svg"></a>
+            </div>
+            <div class="col">
+                <a href="#"><img src="images/digiplus.svg"></a>
+            </div>
+            <div class="col">
+                <a href="#"><img src="images/komoda.svg"></a>
+            </div>
+            <div class="col">
+                <a href="#"><img src="images/pindo.svg"></a>
+            </div>
+            <div class="col">
+                <a href="#"><img src="images/diginext.svg"></a>
+            </div>
+            <div class="col">
+                <a href="#"><img src="images/ganjeh.svg"></a>
+            </div>
+        </div> -->
+
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

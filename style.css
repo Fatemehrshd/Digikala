@@ -1,0 +1,180 @@
+body {
+    /* background-color: rgb(233, 233, 233); */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#search-box {
+    width: 600px;
+    background-color: rgb(226, 226, 226);
+}
+
+.w-100 {
+    width: 100%;
+}
+
+#bascket {
+    width: 20px;
+    height: 20px;
+}
+
+.items {
+    border: none;
+    background-color: transparent;
+    color: gray;
+
+}
+
+#classification {
+    color: black;
+}
+
+#menu-icon {
+    width: 20px;
+    height: 20px;
+}
+
+#city {
+    color: black;
+    position: relative;
+    left: -45%;
+}
+
+
+.logo {
+    width: 20px;
+    height: 20px;
+}
+
+#categories {
+    font-size: 14px;
+}
+
+#button-con {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    width: 52px;
+    height: 52px;
+}
+
+#more-btn {
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(202, 197, 197);
+    width: 52px;
+    height: 52px;
+    text-align: center;
+
+}
+
+.carousel-indicators button {
+      width: 10px !important;
+      height: 10px !important;
+      border-radius: 50% !important;
+}
+
+figure {
+    display: inline-block;
+}
+
+figure figcaption {
+    text-align: center;
+}
+
+figure img {
+    vertical-align: top;
+}
+
+table {
+    text-align: center;
+    background-color: rgb(220, 220, 220);
+}
+table tr {
+    height: 50px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.before {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.left-txt {
+    text-align: left;
+}
+
+.percentage {
+    text-align: center;
+    border-radius: 30px;
+    width: 40px;
+    /* clip-path: ellipse(25% 40% at 50% 50%); */
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* #fresh {
+    background-color: rgb(222, 222, 222);
+    margin: 3px 0px 3px 0px;
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+} */
+
+#thirty {
+    background-color: rgb(23, 177, 23);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    width: 150px;
+}
+
+.little {
+    height: 70px;
+    width: 70px;
+}
+
+.mid {
+    height: 180px;
+    width: 180px;
+}
+
+#ninty {
+    background-color: white;
+    width: 150px;
+    height: 30px;
+    color: rgb(23, 177, 23);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.put-center {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.four {
+    border-radius: 20px;
+    margin: 8px;
+    width: 290px;
+}
+
+.contain-4 {
+    background-color: transparent;
+}
