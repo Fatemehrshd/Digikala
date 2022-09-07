@@ -170,11 +170,50 @@ a {
 }
 
 .four {
-    border-radius: 20px;
-    margin: 8px;
     width: 290px;
 }
 
 .contain-4 {
     background-color: transparent;
+}
+
+.advertise {
+    margin: 20px 8px 20px 8px;
+    border-radius: 20px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.padding {
+    padding: 50px;
+}
+
+#email-ad {
+    background-color: rgb(242, 242, 242);
+    border: none;
+    border-radius: 10px;
+}
+
+#blue {
+    background-color: #3c4b6d;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#footerlogo {
+    width: 44px;
+    height: 44px;
+}
+
+.org {
+    width: 100px;
+    height:100px;
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+#goal {
+    font-size: 12px;
 }
